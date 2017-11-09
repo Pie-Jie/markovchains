@@ -1,0 +1,26 @@
+{
+  "name": "markovtest",
+  "version": "1.0.0",
+  "description": "AI application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pie-Jie/markovtest.git"
+  },
+  "author": "Pieter-Jan Desmadryl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pie-Jie/markovtest/issues"
+  },
+  "homepage": "https://github.com/Pie-Jie/markovtest#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "markov-strings": "^1.3.5",
+    "say": "^0.14.0",
+    "twit": "^2.2.9"
+  }
+}
