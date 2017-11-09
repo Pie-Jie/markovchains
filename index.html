@@ -6,8 +6,13 @@
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
     </head>
     <body>
-        <header><h1>Markov Baby</h1></header>
-        <ul id="tweets">
-            
+        <header><h1>Markov Chains</h1></header>
+        <p></p>
+        <script>
+            $.get('/gettrumprap', {}, function(data)) {
+                  $('p').append(data);
+            });
+        </script>
+                        
     </body>
 </html>
