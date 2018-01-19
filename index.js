@@ -27,6 +27,12 @@ stream.on('message', function (msg) {
     if (data.length >= 10) {
         stream.stop();
     }
+    freestyle(tweet, function (r) {
+        var A = r.couplet();
+        var B = r.couplet();
+
+        rap = [A[0], B[0], A[1], B[1], ''].join('\n');
+    });
 });
 
 app.get('/', function (req, res) {
@@ -38,12 +44,7 @@ var freestyle = require('freestyle');
 
 app.get('/gettrumprap', function (req, res) {
     
-    freestyle(tweet, function (r) {
-        var A = r.couplet();
-        var B = r.couplet();
-
-        rap = [A[0], B[0], A[1], B[1], ''].join('\n');
-    });
+    
     
    res.send('<blockquote>' + rap + '</blockquote>');
 });
